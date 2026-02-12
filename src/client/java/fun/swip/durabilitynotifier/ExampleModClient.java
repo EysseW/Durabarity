@@ -20,19 +20,23 @@ public class ExampleModClient implements ClientModInitializer {
 			// Use the SHARED state class
 			if (DurabilityState.currentMessage != null && DurabilityState.displayTimer > 0) {
 				System.out.println(DurabilityState.currentMessage);
-				int screenWidth = drawContext.guiWidth();// client.getWindow().getGuiScaledWidth();
-				int screenHeight = drawContext.guiHeight(); //client.getWindow().getGuiScaledHeight();
+				int screenWidth = client.getWindow().getGuiScaledWidth();
+				int screenHeight = client.getWindow().getGuiScaledHeight();
 
 				// Position math
-				int x = screenWidth / 2;
-				int y = screenHeight / 2;
-				y += (int) (((double) screenHeight / 8) * 2.75);
+				// The vanilla actionbar is 68 pixels from the center of the screen
+				int yOffset = 68;
 				if (((GuiAccessor)client.gui).getOverlayMessageTime() > 0) {
-					y -= screenHeight / 40;
+					yOffset += 16;
 				}
 
-				drawContext.drawCenteredString(client.font, DurabilityState.currentMessage, x, y,0xFFFFFFFF);
+				// 3. Final Coordinates
+				int x = screenWidth / 2;
+				int y = screenHeight - yOffset;
 
+				int alpha = Math.min(255, (int)(DurabilityState.displayTimer * 10));
+				int color = (alpha << 24) | 0xFFFFFF; // Combined with solid white
+				drawContext.drawCenteredString(client.font, DurabilityState.currentMessage, x, y, color);
 			}
 		});
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
