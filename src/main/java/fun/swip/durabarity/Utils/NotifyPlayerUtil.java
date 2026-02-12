@@ -9,7 +9,7 @@ import net.minecraft.world.item.ItemStack;
 public class NotifyPlayerUtil {
     public static void notifyPlayer(Player player, ItemStack stack, boolean increasement) {
         int remainingDurability = stack.getMaxDamage() - stack.getDamageValue();
-        float remainingDurabilityPercentage = (float) remainingDurability / stack.getMaxDamage() * 100;
+        int remainingDurabilityPercentage = Math.round((float) remainingDurability / stack.getMaxDamage() * 100);
         Component changeIndicator = (increasement)? Component.literal("[+] ").withStyle(ChatFormatting.GREEN) : Component.literal("[-] ").withStyle(ChatFormatting.RED);
         Component displayName = Component.literal(stack.getDisplayName().getString()).withStyle(ChatFormatting.AQUA);
         Component remainingDurabilityComp = Component.literal(String.valueOf(remainingDurability)).withStyle(ChatFormatting.GREEN);
