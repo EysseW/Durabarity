@@ -19,7 +19,6 @@ public class ExampleModClient implements ClientModInitializer {
 
 			// Use the SHARED state class
 			if (DurabilityState.currentMessage != null && DurabilityState.displayTimer > 0) {
-				System.out.println(DurabilityState.currentMessage);
 				int screenWidth = client.getWindow().getGuiScaledWidth();
 				int screenHeight = client.getWindow().getGuiScaledHeight();
 
