@@ -16,7 +16,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class MendingMixin {
     @Inject(method = "repairPlayerItems",at = @At("TAIL"))
     private void onRepairItem(ServerPlayer serverPlayer, int i, CallbackInfoReturnable<Integer> cir) {
-        System.out.println();
+        System.out.println("Mending item");
         ItemStack itemStack = serverPlayer.getMainHandItem();
         var enchantmentRegistry = serverPlayer.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
         var mendingHolder = enchantmentRegistry.getOrThrow(Enchantments.MENDING);
