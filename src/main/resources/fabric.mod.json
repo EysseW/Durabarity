@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"fun.swip.durabilityNotifier.ExampleMod"
+			"fun.swip.durabilitynotifier.ExampleMod"
 		],
 		"client": [
-			"fun.swip.durabilityNotifier.ExampleModClient"
+			"fun.swip.durabilitynotifier.ExampleModClient"
 		]
 	},
 	"mixins": [

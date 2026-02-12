@@ -1,10 +1,10 @@
 {
   "required": true,
-  "package": "fun.swip.durabilityNotifier.mixin",
+  "package": "fun.swip.durabilitynotifier.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "fun.swip.durabilityNotifier.mixin.ItemStackMixin",
-    "fun.swip.durabilityNotifier.mixin.MendingMixin"
+    "ItemStackMixin",
+    "MendingMixin"
   ],
   "injectors": {
     "defaultRequire": 1

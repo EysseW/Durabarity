@@ -1,4 +1,4 @@
-package fun.swip.durabilityNotifier;
+package fun.swip.durabilitynotifier;
 
 import net.minecraft.network.chat.Component;
 

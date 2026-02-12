@@ -1,14 +1,7 @@
-package fun.swip.durabilityNotifier;
+package fun.swip.durabilitynotifier;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
-import net.minecraft.ChatFormatting;
-import net.minecraft.network.chat.CommonComponents;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TextColor;
-import net.minecraft.world.item.ItemStack;
-import org.jetbrains.annotations.Debug;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

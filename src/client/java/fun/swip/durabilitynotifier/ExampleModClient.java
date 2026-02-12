@@ -1,6 +1,6 @@
-package fun.swip.durabilityNotifier;
+package fun.swip.durabilitynotifier;
 
-import fun.swip.durabilityNotifier.mixin.client.GuiAccessor;
+import fun.swip.durabilitynotifier.mixin.client.GuiAccessor;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
@@ -26,9 +26,9 @@ public class ExampleModClient implements ClientModInitializer {
 				// Position math
 				int x = screenWidth / 2;
 				int y = screenHeight / 2;
-				y += 196;
+				y += (int) (((double) screenHeight / 8) * 2.75);
 				if (((GuiAccessor)client.gui).getOverlayMessageTime() > 0) {
-					y -= 20;
+					y -= screenHeight / 40;
 				}
 
 				drawContext.drawCenteredString(client.font, DurabilityState.currentMessage, x, y,0xFFFFFFFF);
