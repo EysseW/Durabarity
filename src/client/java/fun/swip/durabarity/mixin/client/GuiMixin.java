@@ -1,6 +1,6 @@
-package fun.swip.durabilitynotifier.mixin.client;
+package fun.swip.durabarity.mixin.client;
 
-import fun.swip.durabilitynotifier.DurabilityState;
+import fun.swip.durabarity.DurabilityState;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.network.chat.Component;
 import org.spongepowered.asm.mixin.Mixin;

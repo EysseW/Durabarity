@@ -1,6 +1,6 @@
-package fun.swip.durabilitynotifier.mixin;
+package fun.swip.durabarity.mixin;
 
-import fun.swip.durabilitynotifier.Utils.NotifyPlayerUtil;
+import fun.swip.durabarity.Utils.NotifyPlayerUtil;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.ExperienceOrb;
@@ -16,6 +16,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class MendingMixin {
     @Inject(method = "repairPlayerItems",at = @At("TAIL"))
     private void onRepairItem(ServerPlayer serverPlayer, int i, CallbackInfoReturnable<Integer> cir) {
+        System.out.println();
         ItemStack itemStack = serverPlayer.getMainHandItem();
         var enchantmentRegistry = serverPlayer.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
         var mendingHolder = enchantmentRegistry.getOrThrow(Enchantments.MENDING);

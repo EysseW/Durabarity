@@ -1,6 +1,6 @@
-package fun.swip.durabilitynotifier.Utils;
+package fun.swip.durabarity.Utils;
 
-import fun.swip.durabilitynotifier.DurabilityState;
+import fun.swip.durabarity.DurabilityState;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Player;

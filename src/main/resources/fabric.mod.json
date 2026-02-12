@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "durability_notifier",
+	"id": "durabarity",
 	"version": "1.1",
 	"name": "A mod that notifies durability changes of the main hand item in your actionbar",
 	"description": "Title says all lol",
@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"fun.swip.durabilitynotifier.ExampleMod"
+			"fun.swip.durabarity.ExampleMod"
 		],
 		"client": [
-			"fun.swip.durabilitynotifier.ExampleModClient"
+			"fun.swip.durabarity.ExampleModClient"
 		]
 	},
 	"mixins": [

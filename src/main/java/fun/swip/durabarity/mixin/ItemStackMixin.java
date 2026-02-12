@@ -1,6 +1,6 @@
-package fun.swip.durabilitynotifier.mixin;
+package fun.swip.durabarity.mixin;
 
-import fun.swip.durabilitynotifier.Utils.NotifyPlayerUtil;
+import fun.swip.durabarity.Utils.NotifyPlayerUtil;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;

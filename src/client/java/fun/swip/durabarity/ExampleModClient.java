@@ -1,6 +1,6 @@
-package fun.swip.durabilitynotifier;
+package fun.swip.durabarity;
 
-import fun.swip.durabilitynotifier.mixin.client.GuiAccessor;
+import fun.swip.durabarity.mixin.client.GuiAccessor;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
