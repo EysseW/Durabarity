@@ -1,11 +1,11 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
-	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"id": "durability_notifier",
+	"version": "1.1",
+	"name": "A mod that notifies durability changes of the main hand item in your actionbar",
+	"description": "Title says all lol",
 	"authors": [
-		"Me!"
+		"Pirat"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"fun.swip.durabilityNotifier.ExampleMod"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"fun.swip.durabilityNotifier.ExampleModClient"
 		]
 	},
 	"mixins": [

@@ -1,14 +1,15 @@
 {
-	"required": true,
-	"package": "com.example.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"ExampleMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	},
-	"overwrites": {
-		"requireAnnotations": true
+  "required": true,
+  "package": "fun.swip.durabilityNotifier.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "fun.swip.durabilityNotifier.mixin.ItemStackMixin",
+    "fun.swip.durabilityNotifier.mixin.MendingMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
 	}
 }

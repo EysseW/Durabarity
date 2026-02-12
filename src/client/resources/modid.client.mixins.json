@@ -3,7 +3,9 @@
 	"package": "com.example.mixin.client",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
-      "CenterBedMixin"
+		"fun.swip.durabilityNotifier.mixin.client.CenterBedMixin",
+		"fun.swip.durabilityNotifier.mixin.client.GuiAccessor",
+		"fun.swip.durabilityNotifier.mixin.client.GuiMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
