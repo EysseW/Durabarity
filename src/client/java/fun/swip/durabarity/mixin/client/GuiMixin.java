@@ -1,6 +1,7 @@
 package fun.swip.durabarity.mixin.client;
 
 import fun.swip.durabarity.DurabilityState;
+import fun.swip.durabarity.config.Config;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.network.chat.Component;
 import org.spongepowered.asm.mixin.Mixin;

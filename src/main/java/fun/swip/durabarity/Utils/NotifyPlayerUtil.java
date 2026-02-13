@@ -29,6 +29,9 @@ public class NotifyPlayerUtil {
 
         // Store it in our bridge class
         DurabilityState.currentMessage = message;
+        DurabilityState.percentage = durabilityPercentageComp;
+        DurabilityState.item = displayName;
+        DurabilityState.durability = remainingDurabilityComp;
         DurabilityState.displayTimer = 60; // Start a 3-second countdown (20 ticks = 1s)
     }
 }
