@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "durabarity",
-	"version": "1.2.0",
+	"version": "2.0.0",
 	"name": "Durabarity",
 	"description": "Notifies durability changes of the item in your main hand above the hotbar",
 	"authors": [
