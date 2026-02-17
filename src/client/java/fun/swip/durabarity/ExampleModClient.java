@@ -70,6 +70,7 @@ public class ExampleModClient implements ClientModInitializer {
 
 				int alpha = Math.min(255, (int)(DurabilityState.displayTimer * 10));
 				int color = (alpha << 24) | 0xFFFFFF; // Combined with solid white
+				if (!DurabilityState.increment && Config.critical_value_enabled && Config.critical_value < Integer.parseInt(DurabilityState.durability.getString())) { return; }
 				drawContext.drawCenteredString(client.font, colored, x, y, color);
 			}
 		});

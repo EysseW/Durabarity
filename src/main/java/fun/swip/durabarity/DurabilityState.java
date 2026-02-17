@@ -8,4 +8,5 @@ public class DurabilityState {
     public static Component percentage = null;
     public static Component durability = null;
     public static int displayTimer = 0;
+    public static boolean increment = false;
 }

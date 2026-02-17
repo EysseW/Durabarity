@@ -15,4 +15,6 @@ public class Config extends MidnightConfig {
     @Entry(category = GENERAL, name="Enabled") public static boolean enabled = true;
     @Entry(category = GENERAL, name="Increment message format") public static String increment_format = "&a[+] &b%item% &fhas &a%durability% &fleft &a[%percentage%]";
     @Entry(category = GENERAL, name="Decrement message format") public static String decrement_format = "&c[-] &b%item% &fhas &a%durability% &fleft &a[%percentage%]";
+    @Entry(category = GENERAL, name = "Critical value enabled") public static boolean critical_value_enabled = false;
+    @Entry(category = GENERAL, name = "Critical value") public static int critical_value = 0;
 }

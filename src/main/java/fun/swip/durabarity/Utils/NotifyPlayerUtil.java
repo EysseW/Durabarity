@@ -32,6 +32,7 @@ public class NotifyPlayerUtil {
         DurabilityState.percentage = durabilityPercentageComp;
         DurabilityState.item = displayName;
         DurabilityState.durability = remainingDurabilityComp;
-        DurabilityState.displayTimer = 60; // Start a 3-second countdown (20 ticks = 1s)
+        DurabilityState.displayTimer = 60; // Start a 3-second countdown (20 ticks = 1s)'
+        DurabilityState.increment = increasement;
     }
 }
