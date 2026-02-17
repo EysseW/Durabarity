@@ -15,7 +15,7 @@ public class NotifyPlayerUtil {
         Component remainingDurabilityComp = Component.literal(String.valueOf(remainingDurability)).withStyle(ChatFormatting.GREEN);
         Component stillHas = Component.literal(" still has ").withStyle(ChatFormatting.WHITE);
         Component durabilityText = Component.literal(" durability ").withStyle(ChatFormatting.WHITE);
-        Component durabilityPercentageComp = Component.literal(" [" + String.valueOf(remainingDurabilityPercentage) + "%]").withStyle(ChatFormatting.GREEN);
+        Component durabilityPercentageComp = Component.literal(String.valueOf(remainingDurabilityPercentage)).withStyle(ChatFormatting.GREEN);
 
         Component message = Component.empty()
                 .append(changeIndicator)
@@ -23,7 +23,7 @@ public class NotifyPlayerUtil {
                 .append(stillHas)
                 .append(remainingDurabilityComp)
                 .append(durabilityText)
-                .append(durabilityPercentageComp);
+                .append(" [" + durabilityPercentageComp + "%]");
         player.displayClientMessage(message, true);
         System.out.println(remainingDurability);
 
