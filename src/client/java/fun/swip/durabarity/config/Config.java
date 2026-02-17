@@ -1,11 +1,6 @@
 package fun.swip.durabarity.config;
 
 import eu.midnightdust.lib.config.MidnightConfig;
-import net.minecraft.resources.Identifier;
-
-import javax.swing.*;
-import java.util.ArrayList;
-import java.util.List;
 
 /** * Every option in a MidnightConfig class has to be public and static.
  * The config class also has to extend MidnightConfig.

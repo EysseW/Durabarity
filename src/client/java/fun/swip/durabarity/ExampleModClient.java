@@ -8,10 +8,7 @@ import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.minecraft.client.Minecraft;
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionResult;
-
-import java.util.Locale;
 
 public class ExampleModClient implements ClientModInitializer {
 	@Override
@@ -68,7 +65,7 @@ public class ExampleModClient implements ClientModInitializer {
 				int x = screenWidth / 2;
 				int y = screenHeight - yOffset;
 
-				int alpha = Math.min(255, (int)(DurabilityState.displayTimer * 10));
+				int alpha = Math.min(255, DurabilityState.displayTimer * 10);
 				int color = (alpha << 24) | 0xFFFFFF; // Combined with solid white
 				if (!DurabilityState.increment && Config.critical_value_enabled && Config.critical_value < Integer.parseInt(DurabilityState.durability.getString())) { return; }
 				drawContext.drawCenteredString(client.font, colored, x, y, color);
